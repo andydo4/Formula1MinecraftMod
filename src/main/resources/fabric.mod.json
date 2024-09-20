@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "f1mod",
+	"version": "${version}",
+	"name": "F1Mod",
+	"description": "This is a Formula 1 Mod that implements drivable F1 cars into the game. Created by Andrew Do.",
+	"authors": [
+		"Andrew Do"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/f1mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.andrew.f1mod.F1Mod"
+		],
+		"fabric-datagen": [
+			"net.andrew.f1mod.F1ModDataGenerator"
+		]
+	},
+	"mixins": [
+		"f1mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
